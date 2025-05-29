@@ -1,0 +1,28 @@
+# train_aug_pr.yaml
+
+# Data
+# Corpus opts:
+data:
+    corpus_1:
+        path_src: data/src_train_aug_p.txt
+        path_tgt: data/tgt_train_aug_p.txt
+    corpus_2:
+        path_src: data/src_train.txt
+        path_tgt: data/tgt_train.txt
+    valid:
+        path_src: data/src_val.txt
+        path_tgt: data/tgt_val.txt
+
+# Vocabulary files
+src_vocab: onmt/aug/augp.vocab.src
+tgt_vocab: onmt/aug/augp.vocab.tgt
+
+# Train on a single GPU
+world_size: 1
+gpu_ranks: [0]
+
+# Where to save the checkpoints
+save_model: models/augp
+save_checkpoint_steps: 5000
+train_steps: 5000
+valid_steps: 500
