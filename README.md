@@ -45,7 +45,7 @@ Each experiment has corresponding:
 
 ## License
 
-[Specify your license here]
+MIT
 
 ## Acknowledgements
 
